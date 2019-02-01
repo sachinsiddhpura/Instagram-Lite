@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'instgram.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'inst',
+        'USER':'admin',
+        'PASSWORD':'admin123',
+        'HOST':'localhost:8000',
+        'PORT':5432
     }
 }
 
